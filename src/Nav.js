@@ -5,20 +5,20 @@ import car2 from './images/car3.jpg'
 
 import "./cute.css";
 const Header = () => {
-  const Nav_links = [
-    {
-      path: "/home",
-      display: "Home",
-    },
-    {
-      path: "/about",
-      display: "About",
-    },
-    {
-      path: "/tour",
-      display: "Tour",
-    },
-  ];
+  // const Nav_links = [
+  //   {
+  //     path: "/home",
+  //     display: "Home",
+  //   },
+  //   {
+  //     path: "/about",
+  //     display: "About",
+  //   },
+  //   {
+  //     path: "/tour",
+  //     display: "Tour",
+  //   },
+  // ];
   return (
     <div className="container-fluid box">
     <header className="header container-fluid">
@@ -33,22 +33,6 @@ const Header = () => {
             {/* =============Logo End============ */}
             {/* =============Menu Start============ */}
 
-            <div className="navigation">
-              <ul className="menu d-flex gap-4 align-items-center">
-                {Nav_links.map((item, index) => (
-                  <li className="nav_item" key={index}>
-                    <NavLink
-                      to={item.path}
-                      className={(navClass) =>
-                        navClass.isActive ? "active__link" : ""
-                      }
-                    >
-                      {item.display}
-                    </NavLink>
-                  </li>
-                ))}
-              </ul>
-            </div>
 
             {/* =============Menu End============ */}
 

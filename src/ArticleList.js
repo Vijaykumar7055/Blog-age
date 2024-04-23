@@ -5,20 +5,10 @@ import { Link } from 'react-router-dom';
 import './cute.css';
 const ArticleList = ({ articles }) => (
   <div className="row app">
-    {Data.map((Data) => (
-      <div className="col-12 p-3 ">
-        <Link to="/">
-          <h1>{Data.title}</h1>
-        </Link>
-        <h2>{Data.description}</h2>
-        <p>
-          <a href="https://www.hockeycomputindo.com/2022/04/free-download-react-cuteblog-template.html">
-            {Data.intro}
-          </a>
-        </p>
+   
+      <div className=''>
+      <h2 className='text-uppercase my-4'>Our Blog Page </h2>
       </div>
-
-    ))}
 
     {articles.map((article, key) => (
       <div className="col-md-4 mb-3   d-flex   align-items-center">
