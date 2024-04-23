@@ -52,9 +52,6 @@ p {
   border-style: dashed;
 }
 
-.my-div{
-  height: 200px;
-}
 
 
 /* Navbar */
@@ -76,6 +73,12 @@ p {
 
 .menu {
   margin-bottom: 0;
+}
+
+.img-size{
+  height: 400px !important;
+  width: 100% !important;
+  border-radius: 20px;
 }
 
 .nav_item a{
@@ -107,6 +110,10 @@ p {
   left: 0;
   box-shadow: 3px 3px 8px -3px #ddd;
   z-index: 999;
+}
+
+.app{
+  border-radius: 20px;
 }
 
 

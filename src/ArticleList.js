@@ -4,17 +4,12 @@ import { Link } from 'react-router-dom';
 
 import './cute.css';
 const ArticleList = ({ articles }) => (
-  <div className="row app">
-   
-      <div className=''>
-      <h2 className='text-uppercase my-4'>Our Blog Page </h2>
-      </div>
-
+  <div className="row app d-flex align-items-center justify-content-center ps-5">
     {articles.map((article, key) => (
-      <div className="col-md-4 mb-3   d-flex   align-items-center">
-        <Link className=" card b card-1 p-1" key={key} to={`/article/${article.name}`}>
+      <div className="col-md-4 mb-3 mt-0   d-flex   align-items-center">
+        <Link className="b card-1 mt-5" key={key} to={`/article/${article.name}`}>
           <img
-            className="img-fluid my-div"
+            className="img-fluid img-size my-div"
             alt="{article.title}"
             src={article.img}
           />

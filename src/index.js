@@ -9,21 +9,26 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Data from './Data';
 import Top from './Top';
 import './cute.css';
+import Home from "./Home"
+import About from './About';
 import { Link } from 'react-router-dom';
 class App extends Component {
   render() {
     return (
       <Router>
         <Top />
-        <div className="container">
+        <div className="container-fluid">
           <Nav />
         </div>
         <div>
-          <div className="container">
+          <div className="container-fluid">
             <div className="row">
-              <Route path="/" component={List} exact />
+              <Route path="/"  component={Home} exact />
+              <Route path="/home"  component={Home} exact />
+              <Route path="/tour" component={List} exact />
               <Route path="/article" component={List} exact />
-              <Route path="/article/:name" component={SinglePage} />
+              <Route path="/article/:name" component={SinglePage} />  
+              <Route path="/about" component={About} />
             </div>
           </div>
         </div>

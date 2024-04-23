@@ -33,6 +33,22 @@ const Header = () => {
             {/* =============Logo End============ */}
             {/* =============Menu Start============ */}
 
+            <div className="navigation">
+              <ul className="menu d-flex gap-4 align-items-center">
+                {Nav_links.map((item, index) => (
+                  <li className="nav_item" key={index}>
+                    <NavLink
+                      to={item.path}
+                      className={(navClass) =>
+                        navClass.isActive ? "active__link" : ""
+                      }
+                    >
+                      {item.display}
+                    </NavLink>
+                  </li>
+                ))}
+              </ul>
+            </div>
 
             {/* =============Menu End============ */}
 

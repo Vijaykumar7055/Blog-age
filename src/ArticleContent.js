@@ -5,23 +5,9 @@ import car5 from "../src/images/car5.jpg";
 import car6 from "../src/images/car6.jpg";
 import car7 from "../src/images/car7.jpg";
 import car8 from "../src/images/car8.jpg";
+import car1 from "../src/images/car1.jpg";
 
 const articles = [
-  {
-    name: "about",
-    title: "Virat kohli",
-    date: "22 april 2022",
-    desc: "about cute blog for react js",
-    img: car2,
-    content: [
-      `Cuteblog for react is designed specially for react js, so with this source code project or free template themes for react make you fast and easy to build modern blogging website using react js and cuteblog.`,
-      `Super fast and of course we have injection with auto generated SEO for this project, yes.. we use helmet !!`,
-      `With this concept so you can just focusing on your content article .`,
-      `Cuteblog react adalah sebuah tema dan template yang khusus diperuntukan untuk library react js, dan dengan tema ini tentunya harapan kami selaku pengembang memudahkan mu untuk membuat webiste dan blog dengan cepat. `,
-      `Persembahan dari axcora technology untuk dunia agar dapat membuat sebuah website dan blog modern berbasis react dengan konsep blog.`,
-    ],
-  },
-
   {
     name: "installation",
     title: "Install",
