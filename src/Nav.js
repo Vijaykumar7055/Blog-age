@@ -5,20 +5,20 @@ import car2 from './images/car3.jpg'
 
 import "./cute.css";
 const Header = () => {
-  // const Nav_links = [
-  //   {
-  //     path: "/home",
-  //     display: "Home",
-  //   },
-  //   {
-  //     path: "/about",
-  //     display: "About",
-  //   },
-  //   {
-  //     path: "/tour",
-  //     display: "Tour",
-  //   },
-  // ];
+  const Nav_links = [
+    {
+      path: "/home",
+      display: "Home",
+    },
+    {
+      path: "/about",
+      display: "About",
+    },
+    {
+      path: "/tour",
+      display: "Tour",
+    },
+  ];
   return (
     <div className="container-fluid box">
     <header className="header container-fluid">
