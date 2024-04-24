@@ -16,7 +16,7 @@ const Header = () => {
     },
     {
       path: "/tour",
-      display: "Tour",
+      display: "Blog",
     },
   ];
   return (

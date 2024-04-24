@@ -12,6 +12,7 @@ import './cute.css';
 import Home from "./Home"
 import About from './About';
 import { Link } from 'react-router-dom';
+import Footer from './Footer';
 class App extends Component {
   render() {
     return (
@@ -32,6 +33,8 @@ class App extends Component {
             </div>
           </div>
         </div>
+
+        <Footer />
       </Router>
     );
   }

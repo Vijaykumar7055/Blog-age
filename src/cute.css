@@ -1,14 +1,10 @@
 
 html,
 body {
-  background-color: #00008B;
+
  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .dropdown-menu,
-.card {
-  border-radius: 10px;
-  background-color: #00008B;
-}
 
 .back-ground{
   background-color: #00008b88;
@@ -69,6 +65,7 @@ p {
 
 .logo img{
   width: 30%;
+  border-radius: 60%;
 }
 
 .menu {
@@ -116,5 +113,38 @@ p {
   border-radius: 20px;
 }
 
+
+
+
+/* Responsive navbar */
+/* Add this CSS to your existing cute.css file */
+
+/* Media Query for Mobile Devices */
+@media (max-width: 767px) {
+  .nav_wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .menu {
+    margin-top: 20px; /* Adjust margin for better spacing */
+  }
+  
+  .navigation {
+    margin-top: 20px; /* Adjust margin for better spacing */
+  }
+  
+  .nav_right {
+    margin-top: 20px; /* Adjust margin for better spacing */
+  }
+  
+  .nav_btns {
+    flex-direction: column;
+  }
+  
+  .mobile_menu {
+    display: block;
+  }
+}
 
 
