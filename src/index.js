@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import SinglePage from './SinglePage';
-import { Helmet } from 'react-helmet';
 import List from './List';
 import Nav from './Nav';
 import 'bootstrap/dist/css/bootstrap.min.css';
