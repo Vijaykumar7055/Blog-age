@@ -1,8 +1,9 @@
 import React from "react";
-import { Container } from "react-bootstrap";
-import Img1 from "../src/images/car2.jpg"
-import "../src/Css/home.css"
- const Home =  () => {
+import { Container, Button } from "react-bootstrap";
+import Img1 from "../src/images/car2.jpg";
+import "../src/Css/home.css";
+
+const Home = () => {
   return (
     <section id="getStarted" className="">
       <img
@@ -10,7 +11,7 @@ import "../src/Css/home.css"
         alt="none"
         className="startedImg"
       />
-      <Container className="container" style={{"height": "100vh"}}>
+      <Container className="container" style={{ height: "100vh" }}>
         <div className="allText">
           <h1
             className="title"
@@ -29,10 +30,10 @@ import "../src/Css/home.css"
             data-aos-duration="370"
           >
             LGR is an online creator marketplace that gives you the freedom to
-            find collaborations opportunities, grow your brand and learn from
+            find collaboration opportunities, grow your brand, and learn from
             others.
           </p>
-          <button
+          <Button
             className="getStartedBtn"
             data-aos="slide-up"
             data-aos-anchor-placement="bottom-bottom"
@@ -41,11 +42,11 @@ import "../src/Css/home.css"
             easing="ease-in"
           >
             <strong>Get Started</strong> - It's free
-          </button>
+          </Button>
         </div>
       </Container>
     </section>
   );
-}
+};
 
-export default Home
+export default Home;
