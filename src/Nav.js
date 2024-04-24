@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Button } from "reactstrap";
 import { NavLink, Link } from "react-router-dom";
 import car2 from './images/car3.jpg'
+import {Navbar, Nav, NavDropdown} from 'react-bootstrap';  
 
 import "./cute.css";
+
 const Header = () => {
   const Nav_links = [
     {
@@ -19,57 +21,34 @@ const Header = () => {
       display: "Blog",
     },
   ];
+
+  const [showMenu, setShowMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
   return (
-    <div className="container-fluid box">
-    <header className="header container-fluid">
+    <>  
+     <Navbar fixed='top' bg="danger" expand="lg">
       <Container>
-        <Row>
-          <div className="nav_wrapper d-flex align-items-center justify-content-between">
-            {/* ===========Logo============== */}
-            <div className="logo">
-              <img src={car2} alt="" />
-            </div>
-
-            {/* =============Logo End============ */}
-            {/* =============Menu Start============ */}
-
-            <div className="navigation">
-              <ul className="menu d-flex gap-4 align-items-center">
-                {Nav_links.map((item, index) => (
-                  <li className="nav_item" key={index}>
-                    <NavLink
-                      to={item.path}
-                      className={(navClass) =>
-                        navClass.isActive ? "active__link" : ""
-                      }
-                    >
-                      {item.display}
-                    </NavLink>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* =============Menu End============ */}
-
-            <div className="nav_right d-flex align-items-center gap-4">
-              <div className="nav_btns d-flex align-items-center gap-4">
-                <Button className="btn secondary__btn">
-                  <Link to="/login">Login</Link>
-                </Button>
-                <Button className="btn primary__btn">
-                  <Link to="/register">Register</Link>
-                </Button>
-              </div>
-              <span className="mobile_menu">
-                <i class="ri-menu-line"></i>
-              </span>
-            </div>
-          </div>
-        </Row>
+        <Navbar.Brand href="#home" className="me-4">Vijay Blog</Navbar.Brand> {/* Adding margin-right */}
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+          {Nav_links.map((Element)=>{
+            return(
+              <>
+                <Nav.Link href={Element.path}>{Element.display}</Nav.Link>
+              </>
+            )
+          })}
+          
+          </Nav>
+        </Navbar.Collapse>
       </Container>
-    </header>
-    </div>
+    </Navbar>
+  </>  
   );
 };
 

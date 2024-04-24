@@ -1,8 +1,11 @@
 import React from 'react'
-
+import Navbar from "../src/Nav"
 const About = () => {
   return (
-    <div>About hii</div>
+   <>
+    <Navbar />
+     <h1 className='h-100' styl>Bhalla</h1>
+   </>
   )
 }
 
