@@ -25,7 +25,7 @@ class App extends Component {
             <div className="row">
               <Route path="/"  component={Home} exact />
               <Route path="/home"  component={Home} exact />
-              <Route path="/about" component={About} exact />
+              <Route path="/about" component={About} exact className='mb-5' />
               <Route path="/tour" component={List} exact />
               <Route path="/article" component={List} exact />
               <Route path="/article/:name" component={SinglePage} />  

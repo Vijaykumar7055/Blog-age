@@ -4,6 +4,66 @@ body {
 
  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* cute.css */
+
+/* Common styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa; /* Default background color */
+  color: #212529; /* Default text color */
+}
+
+.navbar {
+  transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+  color: white; /* Default brand text color */
+}
+
+/* Update nav-link styles */
+.nav-link {
+  color: white !important;
+  font-weight: 600;
+  font-size: 1.4rem; /* Default link text color */
+}
+
+
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #343a40; /* Dark background color */
+  color: #adb5bd; /* Dark text color */
+}
+
+.navbar.dark-mode {
+  background-color: #212529; /* Dark navbar background color */
+}
+
+.navbar-brand.dark-mode {
+  color: #adb5bd; /* Dark brand text color */
+}
+
+/* Update nav-link styles for dark mode */
+.nav-link.dark-mode {
+  color: #adb5bd; /* Dark link text color */
+}
+
 .dropdown-menu,
 
 .back-ground{
